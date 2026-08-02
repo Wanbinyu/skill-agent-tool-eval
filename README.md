@@ -2,20 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
-<p align="center">
-  <strong>Standalone Agent Skill</strong> · <code>agent-tool-eval</code>
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT" /></a>
-  <a href="https://github.com/agentskills/agentskills"><img src="https://img.shields.io/badge/format-Agent%20Skills-111827" alt="Agent Skills" /></a>
-</p>
-
-Define a minimal evaluation set for agent tool use. Use when measuring if tools or prompts improved, regression after schema changes, or Chinese "tool 评测", "agent 回归", "工具调用评估". Lightweight task packs - not a full ML platform.
+<p align="center"><strong>One skill. Install in 30 seconds. Use in Claude / Codex / Cursor.</strong></p>
+<p align="center"><code>agent-tool-eval</code> · MIT · Agent Skills format</p>
 
 ---
 
-## Install (Claude Code)
+## Start here
+
+### Install
 
 ```powershell
 git clone https://github.com/Wanbinyu/skill-agent-tool-eval.git
@@ -26,57 +20,40 @@ cd skill-agent-tool-eval
 ```bash
 git clone https://github.com/Wanbinyu/skill-agent-tool-eval.git
 cd skill-agent-tool-eval
-chmod +x scripts/install.sh
-./scripts/install.sh --claude
+chmod +x scripts/install.sh && ./scripts/install.sh --claude
 ```
 
-Claude skill id remains **`agent-tool-eval`** (no `skill-` prefix):
+→ `~/.claude/skills/agent-tool-eval/` · **Restart Claude Code**
 
-`~/.claude/skills/agent-tool-eval/`
+### Then say (examples)
 
-Restart Claude Code after install.
+- *Use the `agent-tool-eval` skill on my current change.*
+- Or any phrase matching the triggers in `SKILL.md` frontmatter (EN + ZH).
+
+---
+
+## What this skill is for
+
+Define a minimal evaluation set for agent tool use. Use when measuring if tools or prompts improved, regression after schema changes, or Chinese "tool 评测", "agent 回归", "工具调用评估". Lightweight task packs - not a full ML platform.
+
+Full workflow (steps, exit criteria, report template): **[`SKILL.md`](SKILL.md)**
+
+> Human docs: EN + [中文](README.zh-CN.md).  
+> `SKILL.md` body is English so agents execute consistently.
+
+---
+
+## One skill = one project
+
+- This repo: **only** `agent-tool-eval`
+- Bulk packs: [ai-surface-skills](https://github.com/Wanbinyu/ai-surface-skills)
+- All solo skills: https://github.com/Wanbinyu?tab=repositories&q=skill-
 
 ### Plugin
 
 ```text
 /plugin marketplace add Wanbinyu/skill-agent-tool-eval
 /plugin install agent-tool-eval@agent-tool-eval
-/reload-plugins
-```
-
----
-
-## What this skill does
-
-See [`SKILL.md`](SKILL.md) (same as `skills/agent-tool-eval/SKILL.md`).
-
-The YAML `description` at the top of `SKILL.md` holds triggers (often EN + ZH).
-
-> **Note:** `SKILL.md` body is English so agents follow instructions reliably.  
-> Human docs are bilingual: this file + [`README.zh-CN.md`](README.zh-CN.md).
-
----
-
-## One skill = one project
-
-This repo ships **only this skill**.  
-Bulk install of related skills:
-
-- Collection: [ai-surface-skills](https://github.com/Wanbinyu/ai-surface-skills)
-- Catalog: [`CATALOG.md`](../CATALOG.md) / [`CATALOG.zh-CN.md`](../CATALOG.zh-CN.md) (local `G:\\skill\\solo`)
-
----
-
-## Layout
-
-```text
-skill-agent-tool-eval/   (GitHub)  or  solo/agent-tool-eval/  (local)
-  README.md              # English
-  README.zh-CN.md        # Chinese
-  SKILL.md
-  skills/agent-tool-eval/SKILL.md
-  scripts/install.ps1
-  .claude-plugin/
 ```
 
 ## License
