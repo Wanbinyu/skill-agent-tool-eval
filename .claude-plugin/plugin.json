@@ -1,0 +1,17 @@
+{
+  "name": "agent-tool-eval",
+  "version": "0.1.0",
+  "description": "Define a minimal evaluation set for agent tool use. Use when measuring if tools or prompts improved, regression after schema changes, or Chinese \"tool \u8bc4\u6d4b\", \"agent \u56de\u5f52\", \"\u5de5\u5177\u8c03\u7528\u8bc4\u4f30\". Lightweight task pa...",
+  "author": {
+    "name": "Wanbinyu",
+    "url": "https://github.com/Wanbinyu"
+  },
+  "homepage": "https://github.com/Wanbinyu/skill-agent-tool-eval",
+  "repository": "https://github.com/Wanbinyu/skill-agent-tool-eval",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "agent-tool-eval"
+  ]
+}
